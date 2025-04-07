@@ -1,0 +1,53 @@
+.avatar {
+    font-size: 80px;
+  }
+  
+  @media (min-width: 768px) {
+    .avatar {
+      font-size: 120px;
+    }
+  }
+  
+  .creator-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .creator-section {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start; /* <- aqui o ajuste importante */
+      text-align: left;
+    }
+  
+    .creator-text {
+      max-width: 600px;
+    }
+  }
+  
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .buttons button {
+    width: 75%;
+  }
+  
+  @media (min-width: 768px) {
+    .buttons {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .buttons button {
+      width: 200px;
+    }
+  }
+  
